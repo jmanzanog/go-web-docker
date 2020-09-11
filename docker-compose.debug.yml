@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  go-web-docker:
+    image: go-web-docker:debug
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    ports:
+      - "4500:4500"
